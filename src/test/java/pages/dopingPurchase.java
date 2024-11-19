@@ -51,7 +51,6 @@ public class dopingPurchase {
     public WebElement ccYear;
     @FindBy(xpath = "//*[@id=\"cc-form\"]/div[3]/div[3]/input")
     public WebElement cvv;
-    //Test2
     @FindBy(xpath = "/html/body/main/section[1]/div[1]/h2")
     public WebElement enCokTercihEdilen;
 }
