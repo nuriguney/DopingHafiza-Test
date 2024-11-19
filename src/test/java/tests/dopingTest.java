@@ -55,10 +55,10 @@ public class dopingTest {
     }
     public void testSelectExpiryMonthAndYear() {
         WebElement monthOption = allCases.selectMonth(ConfigReader.getProperty("ccMonth"));
-        Driver.waitForElementToBeClickable(monthOption);  // Öğenin tıklanabilir olmasını bekliyoruz
+        Driver.waitForElementToBeClickable(monthOption); 
         monthOption.click();
         WebElement yearOption = allCases.selectYear(ConfigReader.getProperty("ccYear"));
-        Driver.waitForElementToBeClickable(yearOption); //
+        Driver.waitForElementToBeClickable(yearOption); 
         yearOption.click();
         doping.cvv.sendKeys(ConfigReader.getProperty("testCVV"));
     }
@@ -75,8 +75,6 @@ public class dopingTest {
         Driver.getDriver().switchTo().window(mainWindowsHandle);
     }
     public void corumSelect(){
-        //WebElement cityOption = doping.selectCity(ConfigReader.getProperty("city"));
-        //cityOption.click();
         doping.testSehir.click();
         doping.corumId.click();
     }
@@ -114,7 +112,4 @@ public class dopingTest {
         doping.testSubmitSection.click();
         Driver.getDriver().quit();
     };
-    @Test
-    public void test2() throws Exception {
-    }
 }
