@@ -59,7 +59,6 @@ public class cases {
             default:
                 throw new IllegalArgumentException("Geçersiz yıl: " + yearValue);
         }
-        // XPath ile WebElement'i buluyoruz
         return Driver.getDriver().findElement(By.xpath(yearXpath));
     }
     public WebElement selectMonth(String monthValue) {
