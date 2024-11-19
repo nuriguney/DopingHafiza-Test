@@ -111,5 +111,5 @@ public class dopingTest {
         testSelectExpiryMonthAndYear();
         doping.testSubmitSection.click();
         Driver.getDriver().quit();
-    };
+    }
 }
